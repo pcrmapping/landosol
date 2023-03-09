@@ -1,6 +1,6 @@
 from typing import Callable
 import pynecone as pc
-from priconne_backend.route import Route
+from landosol.route import Route
 
 
 def content_page(path: str, title: str = "PriConne Mapping Project", props=None) -> Callable:
@@ -11,8 +11,8 @@ def content_page(path: str, title: str = "PriConne Mapping Project", props=None)
         """Wrapper for a templated route."""
         def wrapper(*children, **props) -> pc.Component:
             """Returns component with template applied."""
-            from priconne_backend.utils.header import header
-            from priconne_backend.utils.footer import footer
+            from landosol.utils.header import header
+            from landosol.utils.footer import footer
             
             return pc.box(
                 header(),

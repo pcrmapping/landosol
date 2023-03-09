@@ -1,8 +1,8 @@
 from pcconfig import config
-from priconne_backend import styles
+from landosol import styles
 import pynecone as pc
-from priconne_backend.state import State
-from priconne_backend.pages import routes
+from landosol.state import State
+from landosol.pages import routes
 
 app = pc.App(state=State, style=styles.BASE_STYLE, stylesheets=styles.STYLESHEETS)
 

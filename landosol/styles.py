@@ -3,7 +3,6 @@ import pynecone as pc
 BASE_STYLE = {
     pc.Text: {
         "font_family": "Inter",
-        "font_size": 16
     }
 }
 
